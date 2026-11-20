@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valdos Detailing | Auto Detailing in Dinuba & Fresno, CA</title>
+<meta name="description" content="Mobile interior and exterior auto detailing, paint protection and ceramic coating in Dinuba and Fresno, CA. Full detail $90. Call 559-672-0765.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:ital,wght@1,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--panel:#101010;--line:#2a2a2a;--text:#f4f4f4;--muted:#a8a8a8;--o:#f7931e;--od:#d97a0b;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:80px;scroll-behavior:smooth}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 Barlow,system-ui,Arial,sans-serif;overflow-x:hidden}
+a{color:inherit}:focus-visible{outline:3px solid var(--o);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.d{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-style:italic;font-weight:800;line-height:.95;letter-spacing:.01em}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(0,0,0,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}.logo b{font-size:30px}.logo small{font-size:10px;letter-spacing:.5em;color:var(--o);margin-top:3px}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;color:var(--muted);font-weight:500}nav a:hover,nav a.on{color:var(--o)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:4px;padding:8px 12px;font:inherit;cursor:pointer}
+.btn{display:inline-block;background:var(--o);color:#000;font:600 17px Barlow,sans-serif;text-decoration:none;padding:13px 24px;border-radius:4px;border:0;cursor:pointer;transition:background .15s,transform .15s}
+.btn:hover{background:var(--od);transform:translateY(-2px)}.btn.g{background:transparent;color:var(--text);border:1px solid var(--line)}.btn.g:hover{border-color:var(--o);color:var(--o)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero{padding:60px 0 70px;background:radial-gradient(900px 400px at 85% 0,rgba(247,147,30,.16),transparent 60%)}
+.car{width:min(440px,85%);margin-bottom:16px;overflow:visible}.car path{stroke-dasharray:700;stroke-dashoffset:700;animation:draw 1.8s .2s ease forwards}.car path+path{animation-delay:.7s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero h1{font-size:clamp(56px,13vw,132px);margin:0 0 18px}.hero h1 span{color:var(--o)}
+.hero p{max-width:34em;color:var(--muted);font-size:19px;margin:0 0 28px}
+.tick{overflow:hidden;border-block:1px solid var(--line);background:var(--panel);padding:14px 0;white-space:nowrap}
+.tick div{display:inline-block;animation:mq 28s linear infinite;font-size:26px;color:var(--o)}.tick span{margin:0 28px}.tick i{color:var(--text);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:68px 0;border-top:1px solid var(--line)}.tick+section{border-top:0}
+h2{font-size:clamp(38px,7vw,60px);margin:0 0 12px}.sub{color:var(--muted);margin:0 0 28px;max-width:38em}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.price{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--o);border-radius:6px;overflow:hidden}.price>div,.price ul{padding:34px}
+.amount{background:var(--o);color:#000;display:flex;flex-direction:column;justify-content:center}.amount .d{font-size:clamp(90px,16vw,150px)}.amount p{margin:6px 0 16px;font-weight:600}.amount .btn{background:#000;color:var(--o);align-self:flex-start}
+.price ul{list-style:none;margin:0;background:var(--panel)}.price li{padding:9px 0 9px 30px;border-bottom:1px solid var(--line);position:relative}.price li:last-child{border:0}
+.price li::before{content:"";position:absolute;left:4px;top:17px;width:11px;height:6px;border-left:3px solid var(--o);border-bottom:3px solid var(--o);transform:rotate(-45deg)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.tabs button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:8px 18px;font:500 16px Barlow,sans-serif;cursor:pointer}.tabs button.on,.tabs button:hover{background:var(--o);color:#000;border-color:var(--o)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--o);padding:24px;border-radius:4px;display:flex;flex-direction:column;gap:6px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--o)}
+.card h3{margin:0;font-size:30px}.card p{margin:0;color:var(--muted);flex:1}.card .pr{color:var(--o);font-weight:600}.card .btn{margin-top:10px;text-align:center;padding:10px}
+.card[hidden]{display:none}
+.ba{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#161616;touch-action:none;user-select:none}
+.ba .p,.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .p{display:grid;place-items:center;font-size:clamp(26px,6vw,56px);color:#555;background:repeating-linear-gradient(45deg,#141414,#141414 14px,#191919 14px,#191919 28px)}
+.ba .aft{clip-path:inset(0 0 0 var(--x,50%))}.ba .aft.p{color:var(--o);background:repeating-linear-gradient(45deg,#1c1204,#1c1204 14px,#241706 14px,#241706 28px)}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:3px;background:var(--o);transform:translateX(-50%);pointer-events:none}
+.ba .bar::after{content:"\2194";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--o);color:#000;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:22px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .tag{position:absolute;top:12px;background:#000c;padding:3px 12px;border-radius:3px;font-weight:600;font-size:14px;z-index:2}
+.ba .tag.l{left:12px}.ba .tag.r{right:12px;color:var(--o)}
+.pick{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 26px;align-items:center}.pick label{cursor:pointer}.pick input{display:none}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.slot{aspect-ratio:4/3;border:2px dashed var(--line);border-radius:6px;display:grid;place-items:center;text-align:center;color:var(--muted);cursor:pointer;overflow:hidden;position:relative;transition:border-color .2s}.slot:hover{border-color:var(--o);color:var(--o)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.slot input{display:none}
+.note{color:var(--muted);font-size:15px;margin-top:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:28px}
+.f{display:flex;flex-direction:column;gap:6px}.f.w{grid-column:1/-1}label.l{font-weight:600;font-size:15px}
+input[type=text],input[type=tel],input[type=date],select,textarea{background:#000;color:var(--text);border:1px solid var(--line);border-radius:4px;padding:12px;font:inherit;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--o);outline:none}textarea{min-height:90px;resize:vertical}
+.err{color:#ff7a59;font-size:14px;min-height:1em}
+.sum{grid-column:1/-1;background:#000;border:1px solid var(--o);border-radius:6px;padding:22px}.sum pre{white-space:pre-wrap;font:inherit;margin:0 0 16px;color:var(--text)}
+.stars{display:flex;gap:4px}.stars button{background:none;border:0;font-size:34px;color:#444;cursor:pointer;padding:0;line-height:1;transition:transform .15s,color .15s}.stars button.on{color:var(--o)}.stars button:hover{transform:scale(1.2)}
+.rvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:26px}.rvc{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px}.rvc .s{color:var(--o);letter-spacing:2px}.rvc p{margin:8px 0}.rvc small{color:var(--muted)}
+.empty{grid-column:1/-1;border:1px dashed var(--line);border-radius:6px;padding:28px;color:var(--muted);text-align:center}
+details{border-bottom:1px solid var(--line);padding:16px 0}summary{cursor:pointer;font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::after{content:"+";color:var(--o);font-size:26px;line-height:1;transition:transform .2s}details[open] summary::after{transform:rotate(45deg)}details p{color:var(--muted);margin:10px 0 0;max-width:40em}summary::-webkit-details-marker{display:none}
+.contact{text-align:center}.contact .tel{display:block;font-size:clamp(44px,11vw,104px);color:var(--o);text-decoration:none;margin:6px 0 24px}.contact p{color:var(--muted);margin:0 0 26px}.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:15px;text-align:center}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:var(--o);color:#000;display:grid;place-items:center;font-size:26px;text-decoration:none;box-shadow:0 6px 24px #f7931e55;animation:pulse 2.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #f7931e00,0 6px 24px #f7931e55}}
+@media(max-width:760px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:#000;flex-direction:column;align-items:flex-start;padding:18px 22px;border-bottom:1px solid var(--line)}nav.open{display:flex}.price{grid-template-columns:1fr}form{grid-template-columns:1fr}section{padding:52px 0}.hdr-call{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}.car path{stroke-dashoffset:0}}
+
+/* Valdos gallery + mobile service refinements */
+.hero{padding:76px 0 82px}
+.hero p{max-width:38em}
+.service-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.service-strip span{border:1px solid #343434;border-radius:30px;padding:7px 13px;color:#ddd;font-size:14px}
+.gallery-intro{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}
+.gallery-intro .sub{margin-bottom:0}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.gallery-card{background:#101010;border:1px solid #292929;border-radius:8px;overflow:hidden;min-width:0}
+.gallery-card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#171717}
+.gallery-card figcaption{padding:14px 16px 16px}
+.gallery-card strong{display:block;font-size:20px;line-height:1.2}
+.gallery-card small{display:block;color:#aaa;margin-top:4px;font-size:14px}
+.gallery-note{color:#999;font-size:14px;margin:18px 0 0}
+.mobile-callout{margin-top:28px;padding:22px;border:1px solid #333;border-left:4px solid var(--o);background:#101010;border-radius:5px}
+.mobile-callout strong{display:block;font-size:22px}
+.mobile-callout p{margin:5px 0 0;color:#aaa}
+@media(max-width:650px){
+ .gallery{grid-template-columns:1fr}
+ .gallery-intro{display:block}
+ .gallery-intro .sub{margin-bottom:20px}
+ .hero{padding:52px 0 58px}
+ .gallery-card img{aspect-ratio:4/3}
+}
+
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top"><b class="d">VALDOS</b><small>DETAILING</small></a>
+<button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav"><a href="#services">Services</a><a href="#results">Results</a><a href="#book">Book</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a class="btn hdr-call" href="tel:+15596720765">559-672-0765</a></nav>
+</div></header>
+<a class="fab" href="tel:+15596720765" aria-label="Call Valdos Detailing">&#9742;</a>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<svg class="car" viewBox="0 0 420 70" fill="none" role="img" aria-label="Car outline"><path d="M6 60C60 52 90 50 130 40C160 18 190 8 235 8C280 8 310 22 332 38C365 44 395 50 414 60" stroke="#f7931e" stroke-width="7" stroke-linecap="round"/><path d="M135 40C190 34 270 34 332 38" stroke="#f7931e" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+<h1 class="d">Your car, <span>dialed in.</span></h1>
+<p>Professional mobile auto detailing at your home or workplace in Dinuba, Fresno and nearby communities. Interior and exterior care, paint protection and ceramic coating. Full detail from $90.</p>
+<div class="cta"><a class="btn" href="#book">Book your detail</a><a class="btn g" href="tel:+15596720765">Call 559-672-0765</a></div><div class="service-strip"><span>Mobile service</span><span>We come to you</span><span>Dinuba &amp; Fresno, CA</span></div>
+</div></div>
+<div class="tick" aria-hidden="true"><div id="tk"></div></div>
+
+<section id="services"><div class="wrap">
+<h2 class="d rv">Services</h2><p class="sub rv">Professional detailing brought to your driveway, home or workplace. Choose the service that fits your vehicle.</p>
+<div class="price rv">
+<div class="amount"><span class="d">$90</span><p>Full detail, inside and out</p><a class="btn" href="#book" data-svc="Full Detail ($90)">Book the $90 detail</a></div>
+<ul><li>Exterior wash and dry</li><li>Interior vacuum and wipe-down</li><li>Floor mats and carpets cleaned</li><li>Windows cleaned inside and out</li><li>Dash, doors and console detailed</li></ul>
+</div>
+<div class="tabs rv" style="margin-top:34px" id="tabs"><button class="on" data-f="all">All</button><button data-f="ext">Exterior</button><button data-f="int">Interior</button><button data-f="pro">Protection</button></div>
+<div class="grid" id="cards"></div>
+</div></section>
+
+<section id="results"><div class="wrap">
+<div class="gallery-intro"><div><h2 class="d rv">Results</h2><p class="sub rv">A look at the kinds of detailing transformations and finishes we offer.</p></div></div>
+<div class="gallery">
+<figure class="gallery-card rv"><img src="images/black-sedan-before-after.png" alt="Black Toyota sedan shown before and after an exterior detail" loading="lazy"><figcaption><strong>Exterior detail transformation</strong><small>Paint and exterior refresh</small></figcaption></figure>
+<figure class="gallery-card rv"><img src="images/audi-paint-detail.png" alt="Black Audi hood showing a paint finish comparison" loading="lazy"><figcaption><strong>Paint finish comparison</strong><small>Gloss and surface enhancement</small></figcaption></figure>
+<figure class="gallery-card rv"><img src="images/interior-detail.png" alt="Clean vehicle interior with detailed seats, console and carpets" loading="lazy"><figcaption><strong>Interior detailing</strong><small>Seats, console, carpets and trim</small></figcaption></figure>
+<figure class="gallery-card rv"><img src="images/white-suv-detail.png" alt="White SUV with a clean exterior finish" loading="lazy"><figcaption><strong>SUV exterior finish</strong><small>Exterior wash and finishing</small></figcaption></figure>
+<figure class="gallery-card rv"><img src="images/red-sedan-before-after.png" alt="Red sedan shown before and after an exterior clean" loading="lazy"><figcaption><strong>Exterior refresh</strong><small>Clean finish on a daily driver</small></figcaption></figure>
+<figure class="gallery-card rv"><img src="images/audi-exterior-detail.png" alt="Black Audi exterior detail views" loading="lazy"><figcaption><strong>Premium vehicle detailing</strong><small>Care for luxury vehicles</small></figcaption></figure>
+</div>
+<p class="gallery-note">Gallery images are illustrative examples. Vehicle condition and final results vary by service and starting condition.</p>
+<div class="mobile-callout rv"><strong>We come to you.</strong><p>Valdos is a mobile detailing service based in Dinuba, CA, serving Fresno and nearby areas. No shop visit needed.</p></div>
+</div></section>
+
+<section id="book"><div class="wrap">
+<h2 class="d rv">Book your detail</h2><p class="sub rv">Fill this in and send it by text or WhatsApp, or use our online booking page. We'll confirm your time.</p>
+<form id="bf" class="rv" novalidate>
+<div class="f"><label class="l" for="nm">Name</label><input type="text" id="nm" autocomplete="name"><span class="err" id="e1"></span></div>
+<div class="f"><label class="l" for="ph">Phone</label><input type="tel" id="ph" autocomplete="tel"><span class="err" id="e2"></span></div>
+<div class="f"><label class="l" for="sv">Service</label><select id="sv"></select></div>
+<div class="f"><label class="l" for="vh">Vehicle</label><select id="vh"><option>Car / sedan</option><option>SUV / minivan</option><option>Truck</option><option>Other</option></select></div>
+<div class="f"><label class="l" for="dt">Preferred date</label><input type="date" id="dt"><span class="err" id="e3"></span></div>
+<div class="f"><label class="l" for="tm">Preferred time</label><select id="tm"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+<div class="f"><label class="l" for="ad">Location (city or address)</label><input type="text" id="ad" placeholder="Dinuba, Fresno..."></div>
+<div class="f"><label class="l" for="vm">Vehicle make and model</label><input type="text" id="vm" placeholder="2024 Kia Forte"></div>
+<div class="f w"><label class="l" for="nt">Notes</label><textarea id="nt" placeholder="Pet hair, stains, odors, anything we should know"></textarea></div>
+<div class="f w cta"><button class="btn" type="submit">Review my request</button><a class="btn g" href="https://mydetail.app/valdos-car-detailing/book" target="_blank" rel="noopener">Use online booking</a></div>
+<div class="sum" id="sm" hidden><pre id="sp"></pre><div class="cta"><a class="btn" id="sms" href="#">Send by text</a><a class="btn g" id="wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn g" type="button" id="cp">Copy request</button></div></div>
+</form>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+<h2 class="d rv">Reviews</h2><p class="sub rv">Share your experience with Valdos Detailing. Your review is saved on this device and can be sent to us.</p>
+<div class="rvs" id="rl"></div>
+<form id="rf" class="rv" novalidate>
+<div class="f w"><label class="l">Your rating</label><div class="stars" id="st" role="radiogroup" aria-label="Rating"></div><span class="err" id="e4"></span></div>
+<div class="f"><label class="l" for="rn">Name</label><input type="text" id="rn"></div>
+<div class="f"><label class="l" for="rsv">Service</label><select id="rsv"></select></div>
+<div class="f w"><label class="l" for="rt">Your review</label><textarea id="rt"></textarea><span class="err" id="e5"></span></div>
+<div class="f w cta"><button class="btn" type="submit">Post my review</button><a class="btn g" id="rsend" href="#" hidden>Send it to Valdos by text</a></div>
+</form>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2 class="d rv">Questions</h2>
+<div class="rv">
+<details><summary>How much is a full detail?</summary><p>A full detail is $90. Other services, including ceramic coating and paint protection, are quoted by phone or message.</p></details>
+<details><summary>Where do you work?</summary><p>Valdos is a mobile detailing service based in Dinuba, CA. We travel to customers in Fresno and nearby communities. Share your service location when you book.</p></details>
+<details><summary>How do I book?</summary><p>Use the booking form above, the online booking page, or call 559-672-0765. You can also DM us on Instagram.</p></details>
+<details><summary>What is ceramic protection?</summary><p>A durable coating applied to your paint that helps keep it glossy and makes washing easier. Call for a quote based on your vehicle.</p></details>
+</div>
+</div></section>
+
+<section class="contact"><div class="wrap">
+<h2 class="d">Ready to book?</h2>
+<a class="tel d" href="tel:+15596720765">559-672-0765</a>
+<p>Mobile auto detailing based in Dinuba, CA. We come to you in Dinuba, Fresno and nearby communities.</p>
+<div class="cta"><a class="btn" href="#book">Book now</a><a class="btn g" href="https://www.instagram.com/valdoscardetailing01" target="_blank" rel="noopener">Instagram</a><a class="btn g" href="https://mydetail.app/valdos-car-detailing/book" target="_blank" rel="noopener">Online booking</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 Valdos Detailing. Dinuba, CA.</div></footer>
+
+<script>
+const PH="15596720765",$=s=>document.querySelector(s);
+const S=[["Full Detail","ext int","$90","Complete inside-and-out detail in one visit."],["Exterior Detail","ext","Call for quote","Hand wash, dry and finish for a clean, glossy exterior."],["Interior Detail","int","Call for quote","Seats, carpets, mats, dash and doors cleaned."],["Deep Clean","int","Call for quote","Extra attention for stains, spills, pet hair and odors."],["Paint Protection","pro","Call for quote","Protective finish that guards paint from daily wear."],["Ceramic Coating","pro","Call for quote","Long-lasting coating for deep gloss and easier cleaning."],["Showroom Finish","ext pro","Call for quote","Final polish and detail for that like-new look."]];
+const price=n=>n==="Full Detail"?"Full Detail ($90)":n;
+// ticker
+$("#tk").innerHTML=(S.map(s=>`<span>${s[0]} <i>/</i></span>`).join("")).repeat(4);
+// cards + selects
+$("#cards").innerHTML=S.map(s=>`<div class="card rv" data-t="${s[1]}"><h3 class="d">${s[0]}</h3><p>${s[3]}</p><span class="pr">${s[2]}</span><a class="btn" href="#book" data-svc="${price(s[0])}">Book this</a></div>`).join("");
+const opts=S.map(s=>`<option>${price(s[0])}</option>`).join("");
+$("#sv").innerHTML=opts;$("#rsv").innerHTML=opts;
+$("#tabs").onclick=e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#tabs button").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll("#cards .card").forEach(c=>c.hidden=!(b.dataset.f==="all"||c.dataset.t.includes(b.dataset.f)))};
+document.addEventListener("click",e=>{const a=e.target.closest("[data-svc]");if(a)$("#sv").value=a.dataset.svc});
+// menu
+const nav=$("#nav");$("#menu").onclick=()=>{const o=nav.classList.toggle("open");$("#menu").setAttribute("aria-expanded",o)};nav.onclick=e=>{if(e.target.tagName==="A")nav.classList.remove("open")};
+// scroll reveal + active link
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const so=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+x.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section[id]").forEach(s=>so.observe(s));
+// Results are displayed as a fixed photo gallery; no image-upload or comparison controls.\n// booking
+const dt=$("#dt");try{dt.min=new Date().toISOString().slice(0,10)}catch(e){}
+let msg="";
+$("#bf").onsubmit=e=>{e.preventDefault();let ok=true;const chk=(v,id,t)=>{$(id).textContent=v?"":t;if(!v)ok=false};
+chk($("#nm").value.trim(),"#e1","Enter your name.");chk(/\d{7,}/.test($("#ph").value.replace(/\D/g,"")),"#e2","Enter a valid phone number.");chk(dt.value,"#e3","Choose a date.");
+if(!ok)return;
+msg=`Hi Valdos Detailing, I'd like to book:\nService: ${$("#sv").value}\nVehicle: ${$("#vh").value}${$("#vm").value.trim()?" ("+$("#vm").value.trim()+")":""}\nDate: ${dt.value}, ${$("#tm").value.toLowerCase()}\nLocation: ${$("#ad").value.trim()||"Not given"}\nName: ${$("#nm").value.trim()}\nPhone: ${$("#ph").value.trim()}${$("#nt").value.trim()?"\nNotes: "+$("#nt").value.trim():""}`;
+$("#sp").textContent=msg;$("#sms").href="sms:+"+PH+"?&body="+encodeURIComponent(msg);$("#wa").href="https://wa.me/"+PH+"?text="+encodeURIComponent(msg);
+$("#sm").hidden=false;$("#sm").scrollIntoView({behavior:"smooth",block:"center"})};
+$("#cp").onclick=async()=>{try{await navigator.clipboard.writeText(msg);$("#cp").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#sp"));const s=getSelection();s.removeAllRanges();s.addRange(r);$("#cp").textContent="Selected, press copy"}setTimeout(()=>$("#cp").textContent="Copy request",2000)};
+// reviews
+let rate=0,mem=[];const KEY="valdos-reviews";
+const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return mem}};
+const save=a=>{mem=a;try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}};
+function draw(){const a=load(),l=$("#rl");l.innerHTML="";if(!a.length){l.innerHTML='<div class="empty">No reviews yet. Be the first to rate your detail below.</div>';return}
+a.slice().reverse().forEach(r=>{const c=document.createElement("div");c.className="rvc";const s=document.createElement("div");s.className="s";s.textContent="\u2605".repeat(r.r)+"\u2606".repeat(5-r.r);const p=document.createElement("p");p.textContent=r.t;const m=document.createElement("small");m.textContent=r.n+" \u2022 "+r.s;c.append(s,p,m);l.appendChild(c)})}
+$("#st").innerHTML=[1,2,3,4,5].map(i=>`<button type="button" role="radio" aria-checked="false" aria-label="${i} star${i>1?"s":""}" data-r="${i}">\u2605</button>`).join("");
+$("#st").onclick=e=>{const b=e.target.closest("button");if(!b)return;rate=+b.dataset.r;document.querySelectorAll("#st button").forEach(x=>{const on=+x.dataset.r<=rate;x.classList.toggle("on",on);x.setAttribute("aria-checked",+x.dataset.r===rate)})};
+$("#rf").onsubmit=e=>{e.preventDefault();$("#e4").textContent=rate?"":"Choose a star rating.";const t=$("#rt").value.trim();$("#e5").textContent=t?"":"Write a short review.";if(!rate||!t)return;
+const r={r:rate,t,n:$("#rn").value.trim()||"Customer",s:$("#rsv").value.replace(/ \(.*/,"")};const a=load();a.push(r);save(a);draw();
+const m=`New Valdos review: ${"\u2605".repeat(r.r)} (${r.r}/5)\nService: ${r.s}\n${r.t}\n- ${r.n}`;const l=$("#rsend");l.href="sms:+"+PH+"?&body="+encodeURIComponent(m);l.hidden=false;$("#rt").value="";$("#rn").value=""};
+draw();
+</script>
+</body>
+</html>
